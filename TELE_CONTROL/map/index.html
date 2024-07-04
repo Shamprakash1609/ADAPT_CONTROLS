@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS2 Map Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ROS2 Map Viewer</h1>
+    </header>
+    <main>
+        <div class="map-container">
+            <canvas id="mapCanvas"></canvas>
+        </div>
+        <div class="controls-container">
+            <h2>Teleoperation Controls</h2>
+            <div class="control-buttons">
+                <button id="forward">Forward</button>
+                <button id="backward">Backward</button>
+                <button id="left">Left</button>
+                <button id="right">Right</button>
+                <button id="stop">Stop</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --joystick-container-bg: #1e1e1e;
+    --joystick-bg: #424242;
+    --accent-color: #bb86fc;
+    --input-text-color: #ffffff; /* Change input text color to white */
+    --input-bg-color: #333333; /* Set input box background color to dark */
+    --glow-color: rgba(187, 134, 252, 0.3);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Urbanist', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.joystick-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: var(--joystick-container-bg);
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.joystick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: var(--joystick-bg);
+    border-radius: 50%;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    color: var(--input-text-color); /* Keep input text color as white */
+    width: calc(100% - 18px); /* Adjusted width to accommodate border */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--glow-color); /* Small glowing border */
+    box-sizing: border-box;
+    background-color: var(--input-bg-color); /* Set input box background color */
+}
+
+.speed-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.speed-inputs .input-field {
+    flex-basis: calc(50% - 10px);
+}
+
+h1 {
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 50px; /* Increase heading size to 50px */
+}
+
+.static-text {
+    margin-top: 30px; /* Add space above static text */
+    margin-bottom: 20px; /* Add space below static text */
+}

@@ -1,0 +1,170 @@
+ /* Reset default margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* Basic page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.canvas-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.canvas-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #bb86fc;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.switch-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.switch-button:hover {
+    background-color: #0056b3;
+}
+
+img, canvas {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 350px;
+}
+
+/* Joystick Control Styles */
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --joystick-container-bg: #1e1e1e;
+    --joystick-bg: #424242;
+    --accent-color: #bb86fc;
+    --input-text-color: #ffffff;
+    --input-bg-color: #333333;
+    --glow-color: rgba(187, 134, 252, 0.3);
+}
+
+.joystick-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: var(--joystick-container-bg);
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.joystick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: var(--joystick-bg);
+    border-radius: 50%;
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    color: var(--input-text-color);
+    width: calc(100% - 18px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--glow-color);
+    box-sizing: border-box;
+    background-color: var(--input-bg-color);
+}
+
+.speed-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.speed-inputs .input-field {
+    flex-basis: calc(50% - 10px);
+}
+
+h1 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.static-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .canvas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .controls-container {
+        width: 100%;
+    }
+}
