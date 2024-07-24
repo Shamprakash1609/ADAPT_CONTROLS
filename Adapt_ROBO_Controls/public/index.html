@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTROLS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>CONTROLS</h1>
+  </header>
+  <main>
+    <div class="canvas-container">
+      <div class="button-container">
+        <button class="switch-button" id="switch-button">Switch to Map</button>
+        <input type="text" id="mapInput" class="map-input" placeholder="Enter IP">
+        <button class="nav-button" id="nav-button">Open Full Map</button>
+      </div>
+      <div id="camera-view" class="canvas-wrapper">
+        <img id="cameraFeed" src="http://172.16.66.12:8080/video" alt="Camera Feed">
+      </div>
+      <div id="map-view" class="canvas-wrapper" style="display: none;">
+        <canvas id="mapCanvas"></canvas>
+      </div>
+    </div>
+    <div class="controls-container">
+      <div class="speed-inputs">
+        <div class="input-field">
+          <input id="maxLinearSpeed" type="number" step="0.1" value="1.0" placeholder="Max Linear Speed">
+          <label for="maxLinearSpeed">Max Linear Speed</label>
+        </div>
+        <div class="input-field">
+          <input id="maxAngularSpeed" type="number" step="0.1" value="1.0" placeholder="Max Angular Speed">
+          <label for="maxAngularSpeed">Max Angular Speed</label>
+        </div>
+      </div>
+      <div class="joystick-container">
+        <div class="joystick"></div>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
