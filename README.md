@@ -19,7 +19,7 @@
 
 ### 🔄 Robot Moving in Map (Web Interface)
 ![Robot on Map 🗺️](./Teleop/Navigation.png) <!-- Replace this -->
-![Joystick🕹️](./Teleop/joystick.png)
+![Joystick🕹️](./Teleop/6FDC2080-09A8-450E-B031-7024D6FF5AEB_1_201_a.jpeg)
 
 ### 🤖 T-Bot
 ![Camera Feed](./Teleop/Robot.jpeg) <!-- Replace this -->
