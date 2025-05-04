@@ -11,7 +11,6 @@
 | 📍 **Real Robot Navigation** | [🎥 Watch Demo](./Teleop/robot%20movement.mp4) |
 | 🗺️ **Map Navigation View** | [![Watch Video](https://img.youtube.com/vi/YOUR_MAP_VIDEO_ID/0.jpg)](https://youtube.com/watch?v=YOUR_MAP_VIDEO_ID) |
 
-> ⚠️ *Replace the YouTube IDs with your actual video links.*
 
 ---
 
