@@ -27,7 +27,7 @@
 
 ## 🔧 System Architecture
 
-```mermaid
+
 graph TD
 A[Browser UI] -->|WebSocket| B[Node.js Server]
 B -->|rosnodejs / roslibjs| C[ROSBridge WebSocket Server]
