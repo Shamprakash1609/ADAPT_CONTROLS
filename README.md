@@ -52,4 +52,4 @@ graph TD
     A[Browser UI] -->|WebSocket| B[Node.js Server]
     B -->|rosnodejs / roslibjs| C[ROSBridge WebSocket Server]
     B -->|WebRTC / WebSocket| D[Tablet Camera Feed]
-    C --> E[Robot Topics (/cmd_vel,\n/odom,\n/goal)]
+    C --> E["Robot Topics:/cmd_vel\n/odom\n/goal"]
