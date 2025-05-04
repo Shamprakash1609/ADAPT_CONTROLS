@@ -18,7 +18,8 @@
 ## 📸 Screenshots
 
 ### 🔄 Robot Moving in Map (Web Interface)
-![Robot on Map](./images/robot-map-screenshot.png) <!-- Replace this -->
+![Robot on Map 🗺️](./Teleop/Navigation.png) <!-- Replace this -->
+![Joystick🕹️](./Teleop/joystick.png)
 
 ### 🎥 Live Tablet Camera Feed in Browser
 ![Camera Feed](./images/camera-feed-screenshot.png) <!-- Replace this -->
