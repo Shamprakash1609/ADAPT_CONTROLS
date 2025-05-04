@@ -21,8 +21,8 @@
 ![Robot on Map 🗺️](./Teleop/Navigation.png) <!-- Replace this -->
 ![Joystick🕹️](./Teleop/joystick.png)
 
-### 🎥 Live Tablet Camera Feed in Browser
-![Camera Feed](./images/camera-feed-screenshot.png) <!-- Replace this -->
+### 🤖 T-Bot
+![Camera Feed](./Teleop/Robot.jpeg) <!-- Replace this -->
 
 ---
 
@@ -52,4 +52,4 @@ graph TD
     A[Browser UI] -->|WebSocket| B[Node.js Server]
     B -->|rosnodejs / roslibjs| C[ROSBridge WebSocket Server]
     B -->|WebRTC / WebSocket| D[Tablet Camera Feed]
-    C --> E[Robot Topics<br/>(/cmd_vel, /odom, /goal)]
+    C --> E[Robot Topics (/cmd_vel,\n/odom,\n/goal)]
