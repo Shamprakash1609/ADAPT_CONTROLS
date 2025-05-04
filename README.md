@@ -26,11 +26,30 @@
 
 ---
 
-## 🔧 System Architecture
+## 🚀 Features
 
+- 🔄 Real-time control of the robot using ROS topics (`/cmd_vel`, `/goal`, `/odom`)
+- 🗺️ Map-based goal navigation interface
+- 📡 Live camera feed from the tablet using WebRTC
+- 🌐 WebSocket communication between frontend, Node.js server, and ROSBridge
 
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: HTML, CSS ,JavaScript (Canvas)
+- **Backend**: Node.js (WebSocket server)
+- **Robot Middleware**: ROS 2 + ROSBridge
+- **Communication**: `roslibjs`, `rosnodejs`, WebSockets
+- **Streaming**: IP Webcam
+
+---
+
+## 🧠 System Architecture
+
+```mermaid
 graph TD
-A[Browser UI] -->|WebSocket| B[Node.js Server]
-B -->|rosnodejs / roslibjs| C[ROSBridge WebSocket Server]
-B -->|WebRTC / WS| D[Tablet Camera Feed]
-C --> E[Robot Topics (/cmd_vel, /odom, /goal)]
+    A[Browser UI] -->|WebSocket| B[Node.js Server]
+    B -->|rosnodejs / roslibjs| C[ROSBridge WebSocket Server]
+    B -->|WebRTC / WebSocket| D[Tablet Camera Feed]
+    C --> E[Robot Topics<br/>(/cmd_vel, /odom, /goal)]
